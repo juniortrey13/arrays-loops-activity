@@ -7,6 +7,11 @@
  *    hobbies
  */
 
+let hobbies = [ 'rugby', 'weightlifting', 'hiking', 'reading' ];
+for (let i = 0; i < hobbies.length; i++){
+     console.log(hobbies[i]);
+}
+console.log( 'Total number of hobbies:' + hobbies.length );
 
 // Example output
 // 1. swimming
@@ -30,6 +35,15 @@
 // green, red, teal, orange, teal
 // Teal was found 2 times
 
+let colors = [ 'red', 'orange', 'teal', 'yellow', 'green', 'blue', 'teal', 'purple' ];
+let tealCount = 0
+for (let i = 0; i < colors.length; i++){
+     if ( colors[i] === 'teal' ) {
+          tealCount++;
+     }
+}
+console.log( 'How many and what colors do we have available:', colors);
+console.log( 'We have these many rolls left of teal fabric in the store:', tealCount);
 
 /**
  * #3 Even & Odd
@@ -46,7 +60,19 @@
 // 3, 7, 2, 8, 11, 4, 2
 // Odd 3, 7, 11
 // Even 2, 8, 4, 2
-
+let numbers = [13, 4, 1, 12, 9, 6, 21, 18];
+let oddNumbers = []
+let evenNumbers = []
+for (let i = 0; i < numbers.length; i++){
+     if (numbers[i] % 2 === 0) {
+          evenNumbers.push( numbers[i] );
+     } else {
+          oddNumbers.push( numbers[i] );
+     }
+}
+console.log('Our first backet of numbers had:', numbers);
+console.log('the odd numbers in there are:', oddNumbers);
+console.log('the even numbers in there are:', evenNumbers);
 
 /**
  * #4 Flipping Switches
