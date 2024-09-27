@@ -88,6 +88,13 @@ console.log('the even numbers in there are:', evenNumbers);
 // true, false, true, true
 // Toggled false, true, false, false
 
+let hiking = [true, false, true, true, false, false]; // in this scenerio we are asking if cohort members like to go hiking, true = yes false = no
+let toggled = []; // this is the empty array
+for ( let i=0; i<hiking.length; i++) {
+     toggled.push(!hiking[i]);
+}
+console.log( 'the original:', hiking);
+console.log('the mirrored dimension:', toggled);
 
 /**
  * #5 (STRETCH) Remove 0's
@@ -105,8 +112,11 @@ console.log('the even numbers in there are:', evenNumbers);
 // Example output
 // Before loop 3, 0, 2, 8, 0, 0, 0
 // After loop 3, 0, 2, 8
-
-
+numbers = [ 13, 6, 0, 12, 0, 0, 0 ]; // created an array (list) with to many zeros at the end
+while ( numbers[numbers.length - 1] === 0 ){ // so long the end of the array does not end in 0 it will be true
+     numbers.pop(); // if the array ends in 0 it will be removed from the top of the stack
+}
+console.log( "Our array after we removed all the 0's:", numbers);
 /**
  * #6 (STRETCH) Highest & Lowest
  * --------------------
